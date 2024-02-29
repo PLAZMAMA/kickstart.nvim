@@ -44,6 +44,5 @@ vim.o.termguicolors = true
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
 -- :set noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
 
