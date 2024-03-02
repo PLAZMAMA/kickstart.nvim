@@ -9,5 +9,10 @@ return {
     vim.keymap.set('i', '<M-c>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
     vim.keymap.set('n', '<leader>ma', function() vim.g.codeium_enabled = true end, { expr = true, silent = true })
     vim.keymap.set('n', '<leader>md', function() vim.g.codeium_enabled = false end, { expr = true, silent = true })
+
+    require('which-key').register {
+      ['<leader>ma'] = { name = '[M]atrix(codeium) [A]ctivate', _ = 'which_key_ignore' },
+      ['<leader>md'] = { name = '[M]atrix(codeium) [D]eactivate', _ = 'which_key_ignore' },
+    }
  end,
 }
