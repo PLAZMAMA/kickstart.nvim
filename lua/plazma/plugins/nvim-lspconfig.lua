@@ -99,7 +99,7 @@ return {
             -- rust_analyzer = {},
             -- tsserver = {},
             -- html = { filetypes = { 'html', 'twig', 'hbs'} },
-            -- ["autotools-language-server"] = {},
+            autotools_ls = {},
 
             lua_ls = {
                 Lua = {
