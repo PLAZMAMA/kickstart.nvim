@@ -41,10 +41,8 @@ return {
         completeopt = "menu,menuone,noinsert",
       },
       mapping = cmp.mapping.preset.insert {
-        ["<C-j>"] = cmp.mapping.select_next_item(),
-        ["<C-k>"] = cmp.mapping.select_prev_item(),
-        ["<A-j>"] = cmp.mapping.scroll_docs(-4),
-        ["<A-k>"] = cmp.mapping.scroll_docs(4),
+        ["<A-Up>"] = cmp.mapping.scroll_docs(-4),
+        ["<A-Down>"] = cmp.mapping.scroll_docs(4),
         ["<Tab>"] = cmp.mapping.confirm {
           behavior = cmp.ConfirmBehavior.Replace,
           select = true,
@@ -60,10 +58,8 @@ return {
     -- The line beneath this is called `modeline`. See `:help modeline`
     -- vim: ts=2 sts=2 sw=2 et
     require("which-key").register {
-      ["<C-j>"] = { name = "Select next item", _ = "which_key_ignore" },
-      ["<C-k>"] = { name = "Select prev item", _ = "which_key_ignore" },
-      ["<A-j>"] = { name = "Scroll docs up", _ = "which_key_ignore" },
-      ["<A-k>"] = { name = "Scroll docs down", _ = "which_key_ignore" },
+      ["<A-Up>"] = { name = "Scroll docs up", _ = "which_key_ignore" },
+      ["<A-Down>"] = { name = "Scroll docs down", _ = "which_key_ignore" },
       ["<leader>od"] = { name = "[O]pen [D]ocs", _ = "which_key_ignore" },
 
     }
