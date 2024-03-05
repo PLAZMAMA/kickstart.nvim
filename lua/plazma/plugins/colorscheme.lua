@@ -6,7 +6,7 @@ return {
         priority = 1000,
         config = function()
             require("tokyonight").setup {
-                style = "night",
+                style = "moon",
                 transparent = true, -- Enable this to disable setting the background color
                 styles={
                     sidebars = "transparent",
